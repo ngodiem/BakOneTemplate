@@ -56,8 +56,8 @@ function toggeleBackToTop() {
 $("header nav ul li a, .home a").click(function(event) {
 	/* Act on the event */
 	event.preventDefault();  //ngăn chặn không cho chạy đến vùng có id tương ứng với hash
-	// var hash = $(this).attr("href");
-	var hash = this.hash;
+	// var hash = $(this).attr("href"); chỉ xài được cho code viết sẳn
+	var hash = this.hash; // đường dẫn tương đối cho mọi trường hợp
 	var target = $(hash);
 	// phần tử có id tương ứng với hash của nút được click
 	var top = $(target).offset().top;

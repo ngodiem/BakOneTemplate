@@ -42,8 +42,8 @@ header .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
 }
 header .navbar {
-	padding-top: 19px;  /*(95-57)\2 = 19*/
-	padding-bottom: 19px;
+	padding-top: 19px;  /*(95-57)\2 = 19*/ 
+	padding-bottom: 19px; 
 }
  
 /*phần java*/
@@ -73,6 +73,7 @@ header .navbar.fixed-top {
 .dummy-padding {
 	padding-top: 95px;
 }
+/*thêm dummy-padding vì khi dùng fixed-top menu sẽ tràng ra 2 bên và phần tử phía dưới sẽ đẩy lên*/
 
 /*thường làm theo mô hình mb f trước*/
 @media only screen and (max-width: 992px) {
@@ -262,7 +263,7 @@ main .about .box-card .overlay {
 }
 
 main .about .box-card:hover .overlay {
-	transform: translate(-50%, -50%) scale(0);
+	transform: translate(-50%, -50%) scale(1);
 }
 
 main .about .box-card .overlay a {
